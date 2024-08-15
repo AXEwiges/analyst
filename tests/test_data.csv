@@ -1,0 +1,11 @@
+ID,Name,Age,Grade,Subject,Score,Attendance
+1,Alice Smith,18,12,Math,95,98%
+2,Bob Johnson,17,11,Physics,88,95%
+3,Charlie Brown,16,10,Chemistry,78,92%
+4,Diana Lee,,12,Biology,92,97%
+5,Eva Martinez,18,12,Math,91,99%
+6,Frank Wilson,17,11,,85,93%
+7,Grace Taylor,16,10,Physics,89,96%
+8,Henry Davis,18,12,Chemistry,,90%
+9,Ivy Chen,17,11,Biology,94,98%
+10,Jack Thompson,16,10,Math,82,

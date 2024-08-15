@@ -1,11 +1,38 @@
 [package]
 name = "analyst"
-version = "0.0.0"
-edition = "2018"
-authors = ["Muhan Xiao <syrupcake@protonmail.com>"]
-description = "Still under development, no content. This is the first submission. It is used to process data and output common data formats."
+version = "0.1.0"
+edition = "2021"
+authors = ["AX <syrupcake@protonmail.com>"]
+description = "A command line tool that supports quick browsing of csv data."
 license = "MIT/Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/AXEwiges/analyst"
+repository = "https://github.com/AXEwiges/analyst"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.3", features = ["derive"] }
+csv = "1.2"
+anyhow = "1.0"
+thiserror = "1.0"
+rayon = "1.7"
+prettytable = "0.10"
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.0"
+tempfile = "3.5"
+
+[lib]
+name = "analyst"
+path = "src/lib.rs"
+
+[[bin]]
+name = "analyst"
+path = "src/main.rs"
+
+[[test]]
+name = "integration_tests"
+path = "tests/integration_tests.rs"
